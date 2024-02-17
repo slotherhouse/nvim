@@ -1,7 +1,10 @@
 vim.g.mapleader = " "
 vim.keymap.set("i", "kj", "<Esc>")
 
+-- Open explorer
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+
+vim.keymap.set("n", "K", vim.lsp.buf.hover)
 
 -- Move lines up/down while in visual
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
